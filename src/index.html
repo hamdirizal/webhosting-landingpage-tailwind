@@ -9,43 +9,57 @@
   <link href="/dist/output.css" rel="stylesheet">
 </head>
 <body class="font-sans">
-  <section id="Hero" class="bg-brand-1 text-white">
-    <div class="container mx-auto px-6 pt-6 pb-14">
-      <div>
-        <div class="text-2xl font-bold pt-1 mb-14">MyWebHost</div>
-        <h1 class="text-4xl leading-snug font-extrabold mb-8">More than just VPS hosting.</h1>
-        <div class="text-xl leading-normal font-light">MyWebHost Droplets are a scalable compute platform with add-on storage, security, and monitoring capabilities to easily run production applications.
-        </div>
+  <section id="Hero" class="bg-brand-1 text-white bg-cover" 
+  style="background-image: url(/assets/hero-bg.gif);">
+    <div class="container mx-auto px-6 pt-6 pb-14 lg:max-w-7xl">
+      <div class="text-2xl font-bold pt-1">
+        <span>MyWebHost</span>
       </div>
+      <div class="place-content-between md:flex pt-14">
+        <div class="md:w-1/2 sm:pr-8 md:max-w-md lg:max-w-lg md:mt-24">        
+          <h1 class="text-4xl lg:text-6xl leading-snug font-extrabold mb-8">More than just VPS hosting.</h1>
+          <div class="text-xl lg:text-2xl leading-normal font-light">MyWebHost Droplets are a scalable compute platform with add-on storage, security, and monitoring capabilities to easily run production applications.
+          </div>
+        </div>
 
-      <div class="bg-white rounded-md p-10 text-black mt-9">
-        <h3 class="font-bold text-center text-2xl pb-8">Deploy a Virtual Private Server for free with a $100 credit
-        </h3>
-        <form action="#">
-          <div class="mb-4">
-            <input 
-            class="border-2 rounded-md p-2 block w-full"
-            type="email" placeholder="Email Address">
-          </div>
-          <div class="mb-4">
-            <input 
-            class="border-2 rounded-md p-2 block w-full"
-            type="password" placeholder="Password">
-          </div>
-          <div class="mb-5">
-            <button
-            class="bg-green-400 border-green-400 border-2 rounded-md text-white text-sm font-bold px-2 py-3 w-full"
-            >Create free account -></button>
-          </div>
-          <div class="mb-5 text-slate-500 text-center">or sign up with</div>
-          <div class="flex mb-10">
-            <button class="bg-slate-100 border-2 border-slate-300 rounded-md font-bold text-center p-2 grow mr-1">Google</button>
-            <button class="bg-slate-100 border-2 border-slate-300 rounded-md font-bold text-center p-2 grow ml-1">GitHub</button>
-          </div>
-          <div class="text-xxs text-slate-500 text-center">
-            $100, 60-day free trial requires valid credit card. By signing up, you agree to the <a class="text-blue-500" href="#">Terms of Service</a>.
-          </div>
-        </form>
+        <div class="bg-white rounded-md p-8 sm:p-10 text-black mt-9 md:w-1/2 md:max-w-md">
+          <h3 class="font-bold text-center text-2xl pb-8">Deploy a Virtual Private Server for free with a $100 credit
+          </h3>
+          <form action="#">
+            <div class="mb-4">
+              <input 
+              class="border-2 rounded-md px-3 py-3 block w-full"
+              type="email" placeholder="Email Address">
+            </div>
+            <div class="mb-4">
+              <input 
+              class="border-2 rounded-md px-3 py-3 block w-full"
+              type="password" placeholder="Password">
+            </div>
+            <div class="mb-8">
+              <button
+              class="bg-green-400 border-green-400 border-2 rounded-md text-white text-sm font-bold px-2 py-3 w-full"
+              >Create free account -></button>
+            </div>
+            <div class="relative h-0 border-t"></div>
+            <div class="relative mb-5 -mt-4 text-slate-500 text-center z-10">
+              <span class="px-3 bg-white">or sign up with</span>
+            </div>
+            <div class="flex mb-10">
+              <button class="flex place-content-center items-center bg-slate-100 border border-slate-300 rounded-md font-bold text-center p-2 grow mr-1">
+                <img src="/assets/logo-small-google.svg" alt="">
+                <span class="pl-3">Google</span>
+              </button>
+              <button class="flex place-content-center items-center bg-slate-100 border border-slate-300 rounded-md font-bold text-center p-2 grow ml-1">
+                <img src="/assets/logo-small-github.svg" alt="">
+                <span class="pl-3">GitHub</span>
+              </button>
+            </div>
+            <div class="text-xxs text-slate-500 text-center">
+              $100, 60-day free trial requires valid credit card. By signing up, you agree to the <a class="text-blue-500" href="#">Terms of Service</a>.
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </section>
