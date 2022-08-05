@@ -3,9 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body>
+<body class="font-sans">
+  <section id="Hero" class="bg-brand-1 text-white">
+    <div class="container mx-auto px-6 pt-6 pb-14">
+      <div>
+        <div class="text-2xl font-bold pt-1 mb-14">MyWebHost</div>
+        <h1 class="text-4xl leading-snug font-extrabold mb-8">More than just VPS hosting.</h1>
+        <div class="text-xl leading-normal font-light">MyWebHost Droplets are a scalable compute platform with add-on storage, security, and monitoring capabilities to easily run production applications.
+        </div>
+      </div>
+
+      <div class="bg-white rounded-md p-10 text-black mt-9">
+        <h3 class="font-bold text-center text-2xl pb-8">Deploy a Virtual Private Server for free with a $100 credit
+        </h3>
+        <form action="#">
+          <div class="mb-4">
+            <input 
+            class="border-2 rounded-md p-2 block w-full"
+            type="email" placeholder="Email Address">
+          </div>
+          <div class="mb-4">
+            <input 
+            class="border-2 rounded-md p-2 block w-full"
+            type="password" placeholder="Password">
+          </div>
+          <div class="mb-5">
+            <button
+            class="bg-green-400 border-green-400 border-2 rounded-md text-white text-sm font-bold px-2 py-3 w-full"
+            >Create free account -></button>
+          </div>
+          <div class="mb-5 text-slate-500 text-center">or sign up with</div>
+          <div class="flex mb-10">
+            <button class="bg-slate-100 border-2 border-slate-300 rounded-md font-bold text-center p-2 grow mr-1">Google</button>
+            <button class="bg-slate-100 border-2 border-slate-300 rounded-md font-bold text-center p-2 grow ml-1">GitHub</button>
+          </div>
+          <div class="text-xxs text-slate-500 text-center">
+            $100, 60-day free trial requires valid credit card. By signing up, you agree to the <a class="text-blue-500" href="#">Terms of Service</a>.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
   <div class="bg-orange-400">
     <div class="container mx-auto">
       <h1 class="text-3xl font-bold underline">
